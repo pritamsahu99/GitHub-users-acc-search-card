@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Git Users Account</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/733/733609.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/git-png2.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen w-full bg-[#f0f2fa]">
+    <div id="blur-container" class="overflow-hidden h-screen w-full flex justify-center flex-col items-center fixed">
+        <img loading="lazy" id="loader-image" width="100px" height="100px" class="relative" src="./assets/git-loading.png">
+        <div class="shadow relative -top-[30px]"></div>
+    </div>
+    <div id="container" class="relative hidden overflow-x-hidden h-full w-full ">
+        <div class="github flex bg-[#FAF6F0] shadow-[0_4px_10px_0_rgba(157,157,157,0.1)] justify-around fixed md:min-h-[20%] h-[10%] tracking-[1px] w-full">
+            <span class="GitHub flex items-center justify-center md:gap-x-8 gap-x-2"><img class="md:w-[90px] w-[40px]" src="https://cdn-icons-png.flaticon.com/128/733/733609.png" >GitHub</span>
+            <div class="Texts flex justify-center p-6 flex-col">
+                <p class="md:tracking-[8px] tracking-[4px] font-semibold text-[16px] md:text-base"> Feel safe to</p>
+                <p class="searchText gap-x-2 flex leading-[38px] md:text-[2.25rem] text-[1.5rem] font-bold">Search<span class="bg-[#EEE2DE] p-2 rounded-[10rem]"><img src="./assets/search.png" width="22px"></span></p>
+            </div>
+        </div>
+        <div class="h-screen w-full md:flex-row flex-col-reverse flex gap-4 items-center justify-center">
+            <div class="left-side h-[80%] w-[55%] md:w-[50%] gap-14 md:flex items-center justify-center">
+                <a class="button bg-[#5FBDFF] relative" href="./index1.html">
+                    <span class="button__icon-wrapper">
+                        <svg width="10" class="button__icon-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 15">
+                            <path fill="#67729D" d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"></path>
+                        </svg>
+                        
+                        <svg class="button__icon-svg  button__icon-svg--copy" xmlns="http://www.w3.org/2000/svg" width="10" fill="none" viewBox="0 0 14 15">
+                            <path fill="currentColor" d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"></path>
+                        </svg>
+                    </span>
+                    <h4>Explore </h4>
+                    <img src="./assets/cursor.png" width="20px" alt="cursor">
+                </a>
+            </div>
+            <div class="right-side mt-[7rem] overflow-hidden md:h-[70%] md:w-[45%] w-full h-[80%] flex justify-center items-center">
+                <img loading="lazy" id="newPose" class="relative left-14 " src="./assets/pose_43.png" alt="">
+            </div>
+        </div>
+    </div>
+<script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Users Account</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/733/733609.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen w-full bg fixed">
+    <p class="GitHub p-4 md:pl-[2rem] text-center bg-gray-100 ">GitHub <span class="account bg-[#DDF2FD] px-4 py-1 rounded-xl tracking-[1px]">Search any account.</span></p>
+    <div id="serchUser" class="h-full w-full overflow-hidden">
+        <button id="button" class="border-[1px] p-3 top-1 md:ml-8 ml-3 m-2 rounded-full border-[#4f4f4f]" onclick="searchUser()"><img src="./assets/search.png" width="20px"></button>
+        <input type="text" class="md:w-[16rem] md:focus:w-[350px] focus:w-[280px] w-[13.7rem] rounded-[4px] border-[1px] px-5 py-2 md:mx-8" id="username" placeholder="enter username"/>
+        <div id="result" class="md:h-[60%] min-h-[40%] p-4 md:w-[30%] collapse w-[80%] shadow-md bg-[#EEF5FF] m-auto md:mt-0 mt-[3rem] border-[1px] border-[#E7BCDE] rounded-lg flex items-center justify-center flex-col"></div>
+    </div> 
+<script src="./script.js"></script>
+</body>
+</html>
